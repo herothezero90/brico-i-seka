@@ -22,3 +22,27 @@ $(document).ready(function () {
 		$("#more-button").text(newButtonText);
 	});
 });
+// animate images on scroll
+function isInViewport(element) {
+	var rect = element.getBoundingClientRect();
+	return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <=
+			(window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	);
+}
+
+function handleScroll() {
+	var elements = document.querySelectorAll(".card");
+
+	elements.forEach(function (element) {
+		if (isInViewport(element)) {
+			element.classList.add("active");
+		}
+	});
+}
+
+document.addEventListener("scroll", handleScroll);
+document.addEventListener("DOMContentLoaded", handleScroll);
