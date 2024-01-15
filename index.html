@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Orbitron:wght@600&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Orbitron:wght@600&family=Pacifico&family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <title>Brico i Seka</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v1">
 </head>
 
-<body>
+<body class="container-xl">
   <header>
     <figure>
       <img src="./images/brico_i_seka_cropped.png" class="img-fluid w-80" alt="brico_i_seka_logo">
@@ -24,44 +24,44 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid justify-content-center">
         <div class="navbar-nav d-flex flex-row">
-          <a class="nav-link mx-2" href="#about">O nama</a>
           <a class="nav-link mx-2" href="#services">Usluge</a>
-          <a class="nav-link mx-2" href="#">Tim</a>
-          <a class="nav-link mx-2" href="#">Galerija</a>
-          <a class="nav-link mx-2" href="#">Kontakt</a>
+          <a class="nav-link mx-2" href="#team">Tim</a>
+          <a class="nav-link mx-2" href="#gallery">Galerija</a>
+          <a class="nav-link mx-2" href="#footer">Kontakt</a>
         </div>
       </div>
     </nav>
   </header>
   <main>
     <div class="container-lg">
-      <section class="reservation-button">
+      <section class="reservation">
         <h1 class="d-none">Brico i seka</h1>
         <div class="row">
-          <div class="button1">
-            <a href="https://app.zoyya.com/rndko/1434" class="fancy-btn">Rezervacija termina</a>
+          <div class="reservation-button">
+            <a href="https://app.zoyya.com/rndko/1434" class="button">Rezervacija termina</a>
           </div>
         </div>
       </section>
       <hr>
       <section class="about" id="about">
-        <h2>O NAMA</h2>
+        <h2>-O NAMA-</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make
           a
           type specimen book.
         </p>
         <div class="button1">
-          <button id="more-button" class="fancy-btn">Više</button>
+          <button id="more-button" class="button">Više</button>
         </div>
       </section>
       <hr>
       <article class="services" id="services">
-        <h2>USLUGE</h2>
+        <h2>-USLUGE-</h2>
         <article>
-          <h3>SISANJE</h3>
+          <h3>ŠIŠANJE</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book. </p>
@@ -94,10 +94,11 @@
             classical literature, discovered the undoubtable source.</p>
         </article>
       </article>
-      <section class="team">
-        <h2 class="text-center">TIM</h2>
-        <div class="row">
-          <div class="col-md-3 col-12">
+      <hr>
+      <section class="team" id="team">
+        <h2 class="text-center">-TIM-</h2>
+        <div class="row justify-content-md-center">
+          <div class="col">
             <div class="card">
               <img src="./images/portret1.jpg" alt="Avatar">
               <div class="container">
@@ -106,7 +107,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col">
             <div class="card">
               <img src="./images/portret4.jpeg" alt="Avatar">
               <div class="container">
@@ -115,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col">
             <div class="card">
               <img src="./images/portret4.jpeg" alt="Avatar">
               <div class="container">
@@ -124,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-12">
+          <div class="col">
             <div class="card">
               <img src="./images/portret4.jpeg" alt="Avatar">
               <div class="container">
@@ -135,9 +136,9 @@
           </div>
         </div>
       </section>
+      <hr>
     </div>
   </main>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

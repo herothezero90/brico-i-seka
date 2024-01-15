@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  background-color: #E4D1A6;
+  background-color: #323639;
   height: 100vh;
-  width: auto;
+  max-width: 1100px;
 }
 
 hr {
@@ -37,19 +37,22 @@ header {
 
 .nav-link {
   color: #E4D1A6;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
   background-color: #E4D1A6;
+  border-radius: 10px;
+  padding-top: 5vh;
+}
+
+.reservation {
+  margin-bottom: 7vh;
+  border-radius: 10px;
 }
 
 .reservation-button {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
-
-.button1 {
   display: grid;
   margin-left: auto;
   margin-right: auto;
@@ -57,46 +60,23 @@ main {
   text-align: center;
   overflow: hidden;
   width: max-content;
+  border-radius: 10px;
 }
 
-.fancy-btn {
+.button {
+  background-color: #323639;
   display: inline-block;
   position: relative;
   padding: 10px 20px;
   border: 2px solid #323639;
-  color: #323639;
-  font-family: 'Montserrat', sans-serif;
+  color: #E4D1A6;
+  font-family: 'Pacifico', cursive;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
   margin: 20px auto;
-  transition: color 0.4s
-}
-
-.fancy-btn:after {
-  content: " ";
-  border: 2px solid rgba(0, 0, 0, 0);
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  transition: all 0.4s;
-}
-
-.fancy-btn:hover {
-  color: #8d846e
-}
-
-.fancy-btn:hover:after {
-  border: 2px solid #323639;
-  ;
-  width: calc(100% - 10px);
-  height: calc(100% + 10px);
+  transition: color 0.4s;
+  border-radius: 10px;
 }
 
 .about p {
@@ -106,13 +86,15 @@ main {
 }
 
 #more-button {
-  background-color: #E4D1A6;
+  background-color: #323639;
   font-size: 1.5vh;
+  border-radius: 10px;
 }
 
 h2 {
   text-align: center;
   font-weight: 700;
+  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -124,6 +106,7 @@ section.about {
 
 article.services {
   margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 article.services article {
@@ -154,6 +137,8 @@ article.services p {
   background-color: #323639;
   color: #E4D1A6;
   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .container {
@@ -168,33 +153,38 @@ article.services p {
 /* button animations */
 
 .reservation-button .fancy-btn {
-  -webkit-animation: shadow-inset-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: shadow-inset-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-@-webkit-keyframes shadow-inset-center {
+@-webkit-keyframes slide-in-left {
   0% {
-    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
 
   100% {
-    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-@keyframes shadow-inset-center {
+@keyframes slide-in-left {
   0% {
-    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
-    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
   }
 
   100% {
-    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
+
 
 .card {
   -webkit-transform: scale(0.5);
