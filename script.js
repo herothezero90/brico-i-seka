@@ -24,7 +24,7 @@ $(document).ready(function () {
 });
 // animate images on scroll
 function isInViewport(element) {
-	var rect = element.getBoundingClientRect();
+	let rect = element.getBoundingClientRect();
 	return (
 		rect.top >= 0 &&
 		rect.left >= 0 &&
@@ -35,7 +35,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-	var elements = document.querySelectorAll(".card");
+	let elements = document.querySelectorAll(".card");
 
 	elements.forEach(function (element) {
 		if (isInViewport(element)) {
@@ -46,3 +46,9 @@ function handleScroll() {
 
 document.addEventListener("scroll", handleScroll);
 document.addEventListener("DOMContentLoaded", handleScroll);
+
+// safari scroll restoration
+
+if ("scrollRestoration" in history) {
+	history.scrollRestoration = "manual";
+}
