@@ -22,6 +22,7 @@ $(document).ready(function () {
 		$("#more-button").text(newButtonText);
 	});
 });
+
 // animate images on scroll
 function isInViewport(element) {
 	let rect = element.getBoundingClientRect();
