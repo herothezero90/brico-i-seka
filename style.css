@@ -12,8 +12,66 @@ html {
 body {
   background-color: #323639;
   height: 100vh;
-  max-width: 1100px;
+  max-width: 950px;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#brico-main-logo .img-fluid {
+  max-width: 70% !important;
+  margin: auto;
+  display: block;
+  width: 70%;
+}
+
+#brico-image {
+  width: 100vw;
+  /* overflow: hidden; */
+}
+
+#brico-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+header {
+  background-color: #323639;
+}
+
+.navbar {
+  margin-top: 2vh;
+  padding-bottom: 5vh;
+  background-color: #323639;
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+.nav-link {
+  color: #E4D1A6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    font-size: 0.85em;
+  }
+
+  .button {
+    font-size: 1em;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .nav-link {
+    font-size: 1.5em;
+  }
+}
+
+.container-md {
+  max-width: 950px !important;
 }
 
 #myBtn {
@@ -46,6 +104,7 @@ hr {
   border-color: black;
   border-width: 1px 0 0 0;
   border-radius: 20px;
+  width: 100%;
 }
 
 hr:before {
@@ -57,22 +116,7 @@ hr:before {
   border-color: black;
   border-width: 0 0 1px 0;
   border-radius: 20px;
-}
-
-header {
-  background-color: #323639;
-}
-
-.navbar {
-  margin-top: 2vh;
-  padding-bottom: 5vh;
-  background-color: #323639;
-}
-
-.nav-link {
-  color: #E4D1A6;
-  font-size: 1.2em;
-  font-family: 'Montserrat', sans-serif;
+  width: 100%;
 }
 
 main {
@@ -108,16 +152,14 @@ main {
   padding: 10px 20px;
   border: 2px solid #323639;
   color: #f1d89c;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 1.2em;
   font-weight: 700;
   text-decoration: none;
   margin: 20px auto;
   transition: color 0.4s;
   border-radius: 10px;
 }
-
-
 
 .about p {
   text-align: justify;
@@ -134,7 +176,7 @@ main {
 h2 {
   text-align: center;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -353,5 +395,4 @@ footer h2 {
     -webkit-transform: translateX(8px) translateY(-8px);
     transform: translateX(8px) translateY(-8px);
   }
-}
 }

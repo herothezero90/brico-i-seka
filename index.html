@@ -16,17 +16,21 @@
   <link rel="stylesheet" href="style.css?v6">
 </head>
 
-<body class="container-xl">
+<body class="container-md">
   <button onclick="topFunction()" id="myBtn" title="Go to top">NA VRH</button>
-  <header>
-    <figure>
-      <img src="./images/brico_i_seka_cropped.png" class="img-fluid w-80" alt="brico_i_seka_logo">
+  <header class="d-flex flex-column align-items-center">
+    <figure id="brico-main-logo">
+      <img src="./images/brico_i_seka_cropped.png" class="img-fluid" alt="brico_i_seka_logo">
     </figure>
-    <nav class="navbar navbar-expand-lg">
+    <figure id="brico-image">
+      <img src="./images/brico-image.jpeg" alt="brico_old_barbershop_image">
+    </figure>
+    <nav class="navbar">
       <div class="container-fluid justify-content-center">
         <div class="navbar-nav d-flex flex-row">
+          <a class="nav-link mx-2" href="#about">O nama</a>
           <a class="nav-link mx-2" href="#services">Usluge</a>
-          <a class="nav-link mx-2" href="#team">Tim</a>
+          <a class="nav-link mx-2" href="#team">Team</a>
           <a class="nav-link mx-2" href="#gallery">Galerija</a>
           <a class="nav-link mx-2" href="#footer">Kontakt</a>
         </div>
@@ -34,7 +38,7 @@
     </nav>
   </header>
   <main>
-    <div class="container-lg">
+    <div class="container-fluid">
       <section class="reservation">
         <h1 class="d-none">Brico i seka</h1>
         <div class="row">
@@ -98,7 +102,7 @@
       </article>
       <hr>
       <section class="team" id="team">
-        <h2 class="text-center">-TIM-</h2>
+        <h2 class="text-center">-TEAM-</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center">
           <div class="col mb-4 text-center">
             <div class="card">
@@ -106,8 +110,7 @@
               <div class="container">
                 <h4><b>John Doe</b></h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.</p>
+                  industry's standard dummy text ever since the 1500s.</p>
               </div>
             </div>
           </div>
@@ -117,8 +120,7 @@
               <div class="container">
                 <h4><b>Jane Doe</b></h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.</p>
+                  industry's standard dummy text ever since the 1500s.</p>
               </div>
             </div>
           </div>
@@ -128,8 +130,7 @@
               <div class="container">
                 <h4><b>Jane Doe</b></h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.</p>
+                  industry's standard dummy text ever since the 1500s.</p>
               </div>
             </div>
           </div>
@@ -139,8 +140,7 @@
               <div class="container">
                 <h4><b>Jane Doe</b></h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.</p>
+                  industry's standard dummy text ever since the 1500s.</p>
               </div>
             </div>
           </div>
@@ -194,24 +194,24 @@
         <h2 class="text-center">-KONTAKT-</h2>
         <p>
           Ul. kralja Zvonimira 26, Velika Gorica<br>
-          <a href="tel:+385 91 788 6920">+385 91 788 6920</a><br>
+          <a href="tel:+385 91 788 6920" aria-label="Call barbershop on the phone"></a>+385 91 788 6920</a><br>
           <a href="mailto:tomnorsic@gmail.com">tomnorsic@gmail.com</a>
         </p>
       </div>
-      <a href="tel:+385917886920" class="btn">
+      <a href="tel:+385917886920" class="btn" aria-label="Call barbershop on the phone">
         <i class="fas fa-phone"></i>
       </a>
-      <a href="mailto:tomnorsic@gmail.com" class="btn">
+      <a href="mailto:tomnorsic@gmail.com" class="btn" aria-label="Send email to barbershop">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="https://maps.app.goo.gl/HqGnNuu93wkYoiTo7" class="btn">
+      <a href="https://maps.app.goo.gl/HqGnNuu93wkYoiTo7" class="btn" aria-label="Locate barbershop on google maps">
         <i class="fas fa-map-marker-alt"></i>
       </a>
       <div>
-        <a href="https://www.instagram.com" class="btn">
+        <a href="https://www.instagram.com/brico_i_seka/" class="btn" aria-label="Barbershop Instagram page">
           <i class="fab fa-instagram"></i> Instagram
         </a>
-        <a href="https://www.facebook.com" class="btn">
+        <a href="https://www.facebook.com/BricoiSeka/" class="btn" aria-label="Barbershop Facebook page">
           <i class="fab fa-facebook"></i> Facebook
         </a>
       </div>
